@@ -1,0 +1,226 @@
+<html>
+<head>
+<style>
+		#logo{float:left;}
+		
+		#cart{;border-radius: 50%;margin-top:30px}
+		
+		#hair{margin-top:30px}	
+		#beard{margin-top:30px}
+		#moustache{margin-top:30px}
+		#account{margin-top:30px;}
+		#cart{margin-top:30px;}
+		
+		.sticky{border-radius:20px 20px}
+	div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+
+		 .border_radius{
+  			border-radius: 50%;
+		    }
+
+  .search{
+  width: 500px;
+  box-sizing: border-box;
+  border: 3px solid;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top:40px;
+  position:absolute;
+  background-color: yellow;
+  background-position: 12px 12px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+	body{background-color:grey}
+	#ab{Background-color:#e6e6e6;margin:10px 500px 0 500px; width:30%;height:95% ;padding:10px 30px 60px 30px}
+	.a{background-color:silver;width:400px; text-align:center;height:2em }
+	.b{background-color:#4CAF50;width:200px}
+	
+
+  h4 { 
+            display: flex; 
+            flex-direction: row; 
+        } 
+          
+        h4:before, 
+        h4:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 1px solid Black; 
+            margin: auto; 
+        } 
+         
+
+</style>
+</head>
+
+<body>
+<div height="150px" width="100%" class="sticky" style="background-color:black" >
+	
+<table >
+  <a href="myproject.html">
+<tr>
+<th id="cname">Travelers</th>
+</tr></a>
+
+</table>
+		
+		</div>
+<br>
+<img src="https://www.elsetge.cat/myimg/f/43-437777_india-independance-symbol-travel-tourism-background-independence-day.jpg"height="500px" width="470px" style="float:left;margin-top:105px;" class="border_radius">
+			<form id="ab" action="myproject.html" name="myform">
+
+<center>
+		<h1>Sign Up</h1>
+		<h3>Please fill in this form to create an account.</h3>
+		
+	<h3>First Name</h3>
+	<input type="text" placeholder="Enter your First Name" name="fname" class="a" required id="fname" onblur="fname()">	
+	<h3>Last Name</h3>
+	<input type="text" placeholder="Enter your Last Name" name="lname" class="a" required id="lastname">
+	
+	<h3>Email</h3>
+	<input type="email" placeholder="Enter Email Id"  class="a" required name="email" onblur="emailcheck()">
+	<p id="ef"></p>	
+<h3>Password</h3>
+	<input type="password" placeholder="Enter Password" name="password" class="a" required id="password">
+	<h3>Confirm Password</h3>
+	<input type="password" placeholder="Confirm Password" name="repassword" class="a" required id="repass" onblur="rep()">
+	<p id="gh" style="color:red"></p>
+</center>
+<br>
+	<label>
+        <input type="checkbox"  name="remember" style="margin-bottom:15px" required> 
+Agree To Terms & Condition.
+	<br>By Creating an account you agree to our <a href="#" style="color:dodgerblue"> Terms & Privacy</a> 
+      </label>
+	<br>
+<center><br>
+	<input type="Submit" value="Sign Up" style="cursor:pointer;font-weight:bold;height:3em" class="b" href="myproject.html">
+</center>
+</form>
+
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+#cname
+{
+
+font-size: 50px;
+font-family: 'Futura';
+color: white;
+ text-shadow: 0 0 20px lavender, 0 0 30px grey, 0 0 40px orange, 0 0 50px blue, 0 0 60px red, 0 0 70px cyan, 0 0 80px pink;
+text-align: center;
+
+}
+
+
+.fa {
+  padding:5px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 4px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+</style>
+
+	
+
+
+
+
+
+
+<script>
+	function emailcheck(){
+    var string1=document.myform.email.value;
+    if (string1.indexOf("@")==-1)
+    {
+        document.getElementById("ef").innerHTML="(Please input a valid email address!)";
+        document.myform.email.focus();
+    }
+	else
+	{
+		document.getElementById("ef").innerHTML="  ";
+	}
+	
+}
+	function rep(){
+   var pass = document.getElementById("password").value;
+        var confPass = document.getElementById("repass").value;
+        if(pass != confPass) {
+	document.getElementById("gh").innerHTML="Wrong Confirm Password!" ;  
+	document.myform.repass.focus();   
+}	
+	else
+	{
+		document.getElementById("gh").innerHTML="  ";
+	}
+	
+}
+</script>
+	
+
+			
