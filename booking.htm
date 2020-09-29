@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style>
+  #hb{
+     background-color:black;
+     padding: 25px;
+
+  }
+  
+  a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+  }
+  .logo{
+    font-size: 40px;
+    padding-left: 50px;
+    padding-top: 100px;
+  }
+  #dis{
+    padding-left: 10px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+  }
+  #hm{
+    color: red;
+  }
+  #des{
+    padding-left: 10px;
+  }
+  #ab{
+    padding-right: 10px;
+  }
+  #bl{
+    padding-right: 10px;
+  }
+  #su{
+    float: right;
+    text-align: justify;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: grey;
+}
+
+.active {
+  background-color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div id="hb">
+  <a href="myproject.html" class="logo">Travelers</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <a href="myproject.html" id="hm">Home</a>&nbsp
+  <a href="" id="des">Destination</a>&nbsp
+  <a href="booking.htm" id="dis">Bookings</a>&nbsp
+  <a href="aboutus.html" id="ab">About</a>&nbsp
+  <a href="blog%201.html" id="bl">Blog</a>&nbsp
+  <a href="contact.html" id="con">Contact</a>&nbsp
+  <a href="signup.html" id="su">Sign Up</a>
+</div>
+
+
+
+<form name="myForm"  action="Form.html" onsubmit="return validateForm()" method="post"  >
+  <div style="background-color: grey; background-image: images (1).jpg">
+<center>
+  <center>
+<h3 style="font-family:Palatino Linotype; font-size:50px; color:black;"><strong>BOOK A TOUR</strong></h3>
+</center>
+<br><br>
+First Name:
+<input type="text" name="fname"><br><br>
+Last Name:
+<input type:"text" name="lname"><br><br>
+Age:
+<input type="number" name="age"><br><br>
+Email ID:
+<input type="email" name="mail"><br><br>
+How many person:
+<select placeholder="select">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+  <option>6</option>
+</select><br><br>
+Destination:
+<select placeholder="select">
+  <option>Amritsar</option>
+  <option>Chandigarh</option>
+  <option>Kashmir</option>
+  <option>Dalhousie</option>
+  <option>Vaishno Devi</option>
+  <option>Manali</option>
+</select><br><br>
+Submit Your Form:
+<input type="submit">
+<input type="button" onclick="alert('want to confirm booking')" value="confirm"><br><br>
+
+</center>
+</div>
+<br>
+<br>
+<br><br><br>
+<hr size="10" color="black" align="left">
+</body>
+</html>
